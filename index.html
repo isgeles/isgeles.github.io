@@ -12,7 +12,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400..600;1,6..72,400..500&family=Inter+Tight:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400..600;1,6..72,400..500&family=Inter+Tight:wght@400;500;600&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
   <link rel="icon"
@@ -52,7 +52,7 @@
   <div class="wrap">
 
     <!-- ============ HOME ============ -->
-    <section class="tab-panel" data-tab="home">
+    <section class="page-section" id="home">
 
       <section class="hero">
         <div class="hero__text">
@@ -96,7 +96,7 @@
 
         <div class="hero__photo">
           <div class="avatar-frame">
-            <img src="images/profile.jpg" alt="Ismail Geles">
+            <img src="images/ismail.jpg" alt="Ismail Geles">
           </div>
         </div>
       </section>
@@ -104,17 +104,19 @@
     </section>
 
     <!-- ============ RESEARCH ============ -->
-    <section class="tab-panel" data-tab="research" hidden>
+    <section class="page-section" id="research">
 
-      <h2 class="section">Papers</h2>
+      <h2 class="section">Research</h2>
       <div class="section-body">
 
-        <div class="entry no-thumb">
+        <div class="entry">
+          <div class="entry__thumb"><img src="images/papers/arxiv26_marl.png" alt="Multi-agent drone racing"></div>
           <div>
             <p class="entry__title"><a href="https://arxiv.org/abs/2605.22748">Superhuman Safe and Agile Racing through Multi-Agent Reinforcement Learning</a></p>
             <p class="entry__authors"><b>Ismail Geles</b>, Leonard Bauersfeld, Markus Wulfmeier, Davide Scaramuzza</p>
             <p class="entry__venue">preprint, 2026</p>
-            <p class="entry__award">ICRA Workshop Outstanding Paper Award</p>
+            <p class="entry__award">ICRA'26 Workshop Outstanding Paper Award</p>
+            <p class="entry__award">IROS'26 Workshop Best Application Paper Award</p>
             <div class="entry__links">
               <a href="https://rpg.ifi.uzh.ch/marl/">website</a><span class="sep">/</span>
               <a href="https://arxiv.org/abs/2605.22748">arXiv</a><span class="sep">/</span>
@@ -123,18 +125,21 @@
           </div>
         </div>
 
-        <div class="entry no-thumb">
+        <div class="entry">
+          <div class="entry__thumb"><img src="images/papers/arxiv26_throwing.png" alt="Quadrotor payload throwing"></div>
           <div>
             <p class="entry__title"><a href="https://arxiv.org/abs/2606.27603">Learning to Throw: Agile and Accurate Cable-Suspended Payload Delivery with a Quadrotor</a></p>
             <p class="entry__authors">Yifan Zhai, Elia Raimondi, Yunfan Ren, <b>Ismail Geles</b>, Yannick Armati, Jiaxu Xing, Davide Scaramuzza</p>
             <p class="entry__venue">preprint, 2026</p>
+            <p class="entry__award">IROS'26 Workshop Best Poster Award</p>
             <div class="entry__links">
               <a href="https://arxiv.org/abs/2606.27603">arXiv</a>
             </div>
           </div>
         </div>
 
-        <div class="entry no-thumb">
+        <div class="entry">
+          <div class="entry__thumb"><img src="images/papers/arxiv26_variational.png" alt="Continual robot policy learning"></div>
           <div>
             <p class="entry__title"><a href="https://arxiv.org/abs/2606.27353">Continual Robot Policy Learning via Variational Neural Dynamics</a></p>
             <p class="entry__authors">Jiaxu Xing, Zhiyuan Zhu, Yunfan Ren, <b>Ismail Geles</b>, Yifan Zhai, Rudolf Reiter, Davide Scaramuzza</p>
@@ -145,7 +150,8 @@
           </div>
         </div>
 
-        <div class="entry no-thumb">
+        <div class="entry">
+          <div class="entry__thumb"><img src="images/papers/IROS26_PbRL.png" alt="Acrobatic flight from human preferences"></div>
           <div>
             <p class="entry__title"><a href="https://arxiv.org/abs/2508.18817">Learning Real-World Acrobatic Flight from Human Preferences</a></p>
             <p class="entry__authors">Colin Merk, <b>Ismail Geles</b>, Jiaxu Xing, Angel Romero, Giorgia Ramponi, Davide Scaramuzza</p>
@@ -156,7 +162,8 @@
           </div>
         </div>
 
-        <div class="entry no-thumb">
+        <div class="entry">
+          <div class="entry__thumb"><img src="images/papers/ICRA26_dreamer.png" alt="Dream to Fly vision-based drone flight"></div>
           <div>
             <p class="entry__title"><a href="https://arxiv.org/abs/2501.14377">Dream to Fly: Model-Based Reinforcement Learning for Vision-Based Drone Flight</a></p>
             <p class="entry__authors">Angel Romero*, Ashwin Shenai*, <b>Ismail Geles</b>, Elie Aljalbout, Davide Scaramuzza</p>
@@ -167,7 +174,8 @@
           </div>
         </div>
 
-        <div class="entry no-thumb">
+        <div class="entry">
+          <div class="entry__thumb"><img src="images/papers/RAS25_gafar.png" alt="GAFAR revisited point cloud registration"></div>
           <div>
             <p class="entry__title"><a href="https://www.sciencedirect.com/science/article/pii/S0921889024002549">GAFAR revisited&mdash;Exploring the limits of point cloud registration on sparse subsets</a></p>
             <p class="entry__authors">Ludwig Mohr, <b>Ismail Geles</b>, Friedrich Fraundorfer</p>
@@ -178,7 +186,8 @@
           </div>
         </div>
 
-        <div class="entry no-thumb">
+        <div class="entry">
+          <div class="entry__thumb"><img src="images/papers/RAL24_multitask.png" alt="Multi-task reinforcement learning for quadrotors"></div>
           <div>
             <p class="entry__title"><a href="https://ieeexplore.ieee.org/abstract/document/10812062">Multi-Task Reinforcement Learning for Quadrotors</a></p>
             <p class="entry__authors">Jiaxu Xing, <b>Ismail Geles</b>, Yunlong Song, Elie Aljalbout, Davide Scaramuzza</p>
@@ -189,7 +198,8 @@
           </div>
         </div>
 
-        <div class="entry no-thumb">
+        <div class="entry">
+          <div class="entry__thumb"><img src="images/papers/RSS24_demo.png" alt="Agile flight from pixels"></div>
           <div>
             <p class="entry__title"><a href="https://arxiv.org/abs/2406.12505">Demonstrating Agile Flight from Pixels without State Estimation</a></p>
             <p class="entry__authors"><b>Ismail Geles</b>*, Leonard Bauersfeld*, Angel Romero, Jiaxu Xing, Davide Scaramuzza</p>
@@ -201,7 +211,8 @@
           </div>
         </div>
 
-        <div class="entry no-thumb">
+        <div class="entry">
+          <div class="entry__thumb"><img src="images/papers/IROS23_door_open.png" alt="Aerial manipulator opening a door"></div>
           <div>
             <p class="entry__title"><a href="https://ieeexplore.ieee.org/abstract/document/10342289">Learning to Open Doors with Physically Interacting Aerial Manipulators</a></p>
             <p class="entry__authors">Eugenio Cuniato, <b>Ismail Geles</b>, Weixuan Zhang, Olov Andersson, Marco Tognon, Roland Siegwart</p>
@@ -212,7 +223,8 @@
           </div>
         </div>
 
-        <div class="entry no-thumb">
+        <div class="entry">
+          <div class="entry__thumb"><img src="images/papers/ECMR23_gafar.png" alt="GAFAR point cloud registration"></div>
           <div>
             <p class="entry__title"><a href="https://ieeexplore.ieee.org/abstract/document/10256277">GAFAR: Graph&#8209;Attention Feature&#8209;Augmentation for Registration &mdash; A Fast and Light&#8209;weight Point Set Registration Algorithm</a></p>
             <p class="entry__authors">Ludwig Mohr, <b>Ismail Geles</b>, Friedrich Fraundorfer</p>
@@ -230,7 +242,7 @@
         <p class="section-intro">Coursework and thesis projects from my studies.</p>
 
         <div class="entry">
-          <div class="entry__thumb"><img src="images/drone.png" alt="Aerial manipulation"></div>
+          <div class="entry__thumb"><img src="images/projects/drone.png" alt="Aerial manipulation"></div>
           <div>
             <p class="entry__title">Reinforcement Learning for Aerial Manipulation of Articulated Objects</p>
             <p class="entry__context">
@@ -245,7 +257,7 @@
         </div>
 
         <div class="entry">
-          <div class="entry__thumb"><img src="images/psr_example.png" alt="Point cloud registration"></div>
+          <div class="entry__thumb"><img src="images/projects/gafar.png" alt="Point cloud registration"></div>
           <div>
             <p class="entry__title">Point Cloud Registration with Graph Attention Networks</p>
             <p class="entry__context">
@@ -256,7 +268,7 @@
         </div>
 
         <div class="entry">
-          <div class="entry__thumb"><img src="images/high-res-depth.png" alt="High-resolution monocular depth"></div>
+          <div class="entry__thumb"><img src="images/projects/high-res-depth.png" alt="High-resolution monocular depth"></div>
           <div>
             <p class="entry__title"><a href="https://drive.google.com/file/d/1SfzUigKtEwVEPsyWZbVI47mMqzWQRJJ1/view">[Re] Boosting Monocular Depth Estimation Models to High-Resolution via Content-Adaptive Multi-Resolution Merging</a></p>
             <p class="entry__context">Final project in the Advanced Image Processing course at the University of Waterloo.</p>
@@ -272,7 +284,7 @@
         </div>
 
         <div class="entry">
-          <div class="entry__thumb"><img src="images/slide_HER.gif" alt="Hindsight Experience Replay demo"></div>
+          <div class="entry__thumb"><img src="images/projects/slide_HER.gif" alt="Hindsight Experience Replay demo"></div>
           <div>
             <p class="entry__title"><a href="https://drive.google.com/file/d/1vUHvrmGJ71Kul3vCJZqNjQ8vzJt94pqY/view">Deep Reinforcement Learning with Hindsight Experience Replay</a></p>
             <p class="entry__context">Bachelor's thesis supervised by Prof. Daniel Watzenig</p>
@@ -291,11 +303,15 @@
     </section>
 
     <!-- ============ AWARDS ============ -->
-    <section class="tab-panel" data-tab="awards" hidden>
+    <section class="page-section" id="awards">
+
+      <h2 class="section">Awards</h2>
 
       <div class="section-body">
         <ul class="awards-list">
-          <li><span class="year">2026</span><span><b>ICRA Workshop Outstanding Paper Award:</b> &ldquo;Superhuman Safe and Agile Racing through Multi-Agent Reinforcement Learning&rdquo;, Workshop on Scaling Compositional Intelligence for Multi-Agent Robotic Systems</span></li>
+          <li><span class="year">2026</span><span><b>IROS'26 Workshop Best Poster Award:</b> &ldquo;Learning to Throw: Agile and Accurate Cable-Suspended Payload Delivery with a Quadrotor&rdquo;, Sim2Real and Classical Control Workshop, &ldquo;From Rigorous Theory to Data-Driven Robotics&rdquo;</span></li>
+          <li><span class="year">2026</span><span><b>IROS'26 Workshop Best Application Paper Award:</b> &ldquo;Superhuman Safe and Agile Racing through Multi-Agent Reinforcement Learning&rdquo;, Sim2Real and Classical Control Workshop, &ldquo;From Rigorous Theory to Data-Driven Robotics&rdquo;</span></li>
+          <li><span class="year">2026</span><span><b>ICRA'26 Workshop Outstanding Paper Award:</b> &ldquo;Superhuman Safe and Agile Racing through Multi-Agent Reinforcement Learning&rdquo;, Workshop on Scaling Compositional Intelligence for Multi-Agent Robotic Systems</span></li>
           <li><span class="year">2025</span><span><b>UZH Candoc Grant:</b> University of Zurich</span></li>
           <li><span class="year">2024</span><span><b>RSS Best Demo Paper Award:</b> &ldquo;Demonstrating Agile Flight from Pixels without State Estimation&rdquo;</span></li>
           <li><span class="year">2022</span><span><b>Research-Abroad Scholarship:</b> Graz University of Technology</span></li>
@@ -315,27 +331,40 @@
 
   <script>
     (function () {
-      var VALID = ['home', 'research', 'awards'];
-      var tabLinks = document.querySelectorAll('.tab-link, .topnav__brand');
-      var panels = document.querySelectorAll('.tab-panel');
+      var nav = document.querySelector('.topnav');
+      var navLinks = document.querySelectorAll('.tab-link, .topnav__brand');
+      var sections = document.querySelectorAll('.page-section');
 
-      function activate(name) {
-        if (VALID.indexOf(name) === -1) name = 'home';
-        panels.forEach(function (p) { p.hidden = p.dataset.tab !== name; });
-        tabLinks.forEach(function (t) { t.classList.toggle('is-active', t.dataset.tab === name); });
+      function updateNavigation() {
+        var offset = nav.getBoundingClientRect().height + 24;
+        document.documentElement.style.setProperty('--nav-offset', offset + 'px');
+        var active = sections[0].id;
+        sections.forEach(function (section) {
+          if (section.getBoundingClientRect().top <= offset + 1) active = section.id;
+        });
+        if (window.scrollY > 0 && window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 2) {
+          active = sections[sections.length - 1].id;
+        }
+        navLinks.forEach(function (link) {
+          var selected = link.dataset.tab === active;
+          link.classList.toggle('is-active', selected);
+          if (selected) link.setAttribute('aria-current', 'location');
+          else link.removeAttribute('aria-current');
+        });
       }
 
-      tabLinks.forEach(function (t) {
-        t.addEventListener('click', function () {
-          window.scrollTo(0, 0);
+      var scrollPending = false;
+      window.addEventListener('scroll', function () {
+        if (scrollPending) return;
+        scrollPending = true;
+        window.requestAnimationFrame(function () {
+          updateNavigation();
+          scrollPending = false;
         });
-      });
-
-      window.addEventListener('hashchange', function () {
-        activate(location.hash.replace('#', ''));
-      });
-
-      activate(location.hash.replace('#', ''));
+      }, { passive: true });
+      new ResizeObserver(updateNavigation).observe(nav);
+      window.addEventListener('load', updateNavigation);
+      updateNavigation();
 
       var themeToggle = document.getElementById('theme-toggle');
       themeToggle.addEventListener('click', function () {
